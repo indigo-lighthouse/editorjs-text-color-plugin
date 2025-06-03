@@ -942,7 +942,9 @@ class x extends HTMLElement {
     }
   }
   disconnectedCallback() {
-    this.pickerInput && document.body.removeChild(this.pickerInput);
+    this.pickerInput && setTimeout(() => {
+      document.body.contains(this.pickerInput) && document.body.removeChild(this.pickerInput);
+    }, 0), this.pickerInput = null;
   }
   setupCustomPicker() {
     let t = !1;
