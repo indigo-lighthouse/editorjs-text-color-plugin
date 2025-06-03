@@ -85,8 +85,7 @@ Colored text will be wrapped with a `color` tag with an `color-plugin` class.
         "text" : "<font color="#00bcd4">Color</font><span style="background-color: rgb(236, 120, 120);"><font color="#ffffff">Plugin</font></span>."
     },
 }
-```
-                                                                                                      
+```                                                                                               
 ## Credits
 UI Built Based on https://github.com/XboxYan/xy-ui by XboxYan  
 
