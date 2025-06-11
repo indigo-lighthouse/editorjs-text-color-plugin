@@ -941,11 +941,6 @@ class x extends HTMLElement {
       e == null || e.click();
     }
   }
-  disconnectedCallback() {
-    this.pickerInput && setTimeout(() => {
-      document.body.contains(this.pickerInput) && document.body.removeChild(this.pickerInput);
-    }, 0), this.pickerInput = null;
-  }
   setupCustomPicker() {
     let t = !1;
     this.customPicker = this.shadowRoot.getElementById("custom-picker");

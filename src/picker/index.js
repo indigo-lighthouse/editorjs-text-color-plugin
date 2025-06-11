@@ -197,11 +197,6 @@ class ColorPlugin extends HTMLElement {
         }
     }
 
-    disconnectedCallback() {
-        this.pickerInput && setTimeout(() => {
-        document.body.contains(this.pickerInput) && document.body.removeChild(this.pickerInput);
-        }, 0), this.pickerInput = null;
-    }
 
     setupCustomPicker() {
         let isCustomPickerPseudoClick = false;
